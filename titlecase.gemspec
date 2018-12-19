@@ -7,6 +7,16 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/samsouder/titlecase'
   s.description = 'titlecase is a set of methods on the Ruby String class to add title casing support as seen on Daring Fireball <http://daringfireball.net/2008/05/title_case>.'
   s.authors = ['Samuel Souder']
-  s.files = ['README', 'titlecase.gemspec', 'lib/titlecase.rb', 'spec/examples.yaml', 'spec/titlecase_spec.rb']
+  s.files = [
+    'README',
+    'titlecase.gemspec',
+    'lib/titlecase.rb',
+    'lib/words/smallwords.rb',
+    'lib/words/german/function_words.rb',
+    'lib/words/german/transaction_words.rb',
+    'spec/examples_en.yaml',
+    'spec/examples_de.yaml',
+    'spec/titlecase_spec.rb'
+  ]
   s.has_rdoc = false
 end
