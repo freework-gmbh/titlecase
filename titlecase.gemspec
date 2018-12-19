@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name = 'freework/titlecase'
+  s.name = 'titlecase'
   s.version = '0.1.2'
   s.date = '2018-12-18'
   s.summary = 'String methods to properly title case a headline.'
