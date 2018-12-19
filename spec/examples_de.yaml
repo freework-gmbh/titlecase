@@ -1,0 +1,15 @@
+should_pass:
+  -
+    example: "ludwig von mises"
+    expect: "Ludwig von Mises"
+  -
+    example: "ich bin brasilianer aber ich wohne in deutschland"
+    expect: "Ich bin Brasilianer aber ich Wohne in Deutschland"
+
+  -
+    example: "freie architektin at architekturbüro"
+    expect: "Freie Architektin at Architekturbüro"
+
+  -
+    example: "wissenschaftlicher mitarbeiter mit akademischem abschluss at freie universität berlin"
+    expect: "Wissenschaftlicher Mitarbeiter mit Akademischem Abschluss at Freie Universität Berlin"
