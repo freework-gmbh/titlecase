@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
     'lib/titlecase.rb',
     'lib/words/smallwords.rb',
     'lib/words/german/function_words.rb',
-    'lib/words/german/transaction_words.rb',
+    'lib/words/german/transition_words.rb',
     'spec/examples_en.yaml',
     'spec/examples_de.yaml',
     'spec/titlecase_spec.rb'
