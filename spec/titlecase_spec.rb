@@ -18,7 +18,7 @@ describe String do
       examples = YAML.safe_load(file)
       examples['should_pass'].each do |e|
         it "should be the expected value (#{e['expect']})" do
-          expect(e['example'].titlecase(:de)).to eq(e['expect'])
+          expect(e['example'].titlecase_with_locale(:de)).to eq(e['expect'])
         end
       end
     end
@@ -27,13 +27,13 @@ describe String do
   context 'self modifying' do
     it 'should self-modify the original value in place' do
       string = 'a complex thing'
-      string.titlecase!
+      string.titlecase_with_locale!
       expect(string).to eq('A Complex Thing')
     end
 
     it 'works with locale' do
       string = 'eine komplexe dinge'
-      string.titlecase!(:de)
+      string.titlecase_with_locale!(:de)
       expect(string).to eq('Eine Komplexe Dinge')
     end
   end

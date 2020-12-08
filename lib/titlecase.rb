@@ -3,7 +3,11 @@ require_relative 'words/smallwords'
 class String
   include Words::SmallWords
 
-  def titlecase(locale = :en)
+  def titlecase
+    titlecase_with_locale(:en)
+  end
+
+  def titlecase_with_locale(locale = :en)
     small_words = smallwords(locale)
 
     x = split(' ').map do |word|
@@ -19,8 +23,8 @@ class String
     x.join(' ').gsub(/:\s?(\W*#{small_words.join("|")}\W*)\s/) { ": #{Regexp.last_match(1).smart_capitalize} " }
   end
 
-  def titlecase!(locale = :en)
-    replace(titlecase(locale))
+  def titlecase_with_locale!(locale = :en)
+    replace(titlecase_with_locale(locale))
   end
 
   def smart_capitalize

@@ -14,6 +14,14 @@ Usage:
     
     puts "this is a test".titlecase
 
+It also has a method to titlecase based on locale rules, provided the words are added in `lib/words`
+
+    require 'rubygems'
+    require 'titlecase'
+    
+    puts "eine komplexe dinge".titlecase_with_locale(:de)
+    # Eine Komplexe Dinge
+
 Derived from the rules set by John Gruber at <http://daringfireball.net/2008/05/title_case>. I also derived my test cases from his set. If you find any edge cases, please feel free to add them to the examples.yaml file.
 
 Rules from John Gruber:
